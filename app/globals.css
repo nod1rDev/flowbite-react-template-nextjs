@@ -3,3 +3,20 @@
 @source "../.flowbite-react/class-list.json";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+
+
+:root {
+  --primary: #334155;    /* slate-700 */
+  --primary-hover: #475569;  /* slate-600 */
+  --secondary: #64748b;  /* slate-500 */
+  --accent: #0f172a;     /* slate-900 */
+}
+
+.dark {
+  --primary: #f8fafc;    /* slate-50 */
+  --primary-hover: #f1f5f9;  /* slate-100 */
+  --secondary: #e2e8f0;  /* slate-200 */
+  --accent: #94a3b8;     /* slate-400 */
+}
