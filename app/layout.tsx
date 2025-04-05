@@ -2,8 +2,8 @@ import { ThemeModeScript } from "flowbite-react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./Components/Header";
-import BottomNavigation from "./Components/BottomNavigation";
+// import Header from "./Components/Header";
+// import BottomNavigation from "./Components/BottomNavigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,12 +30,16 @@ export default function RootLayout({
       <head>
         <ThemeModeScript />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-100 dark:bg-slate-900`}>
-        <Header />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-slate-100 antialiased dark:bg-slate-900`}
+      >
+        {/* <Header />
         <main className="pt-16 pb-20">
           {children}
-        </main>
-        <BottomNavigation />
+         </main>
+        <BottomNavigation /> */}
+
+        <main className="pt-16 pb-20">Web is blocked</main>
       </body>
     </html>
   );
